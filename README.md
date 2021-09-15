@@ -1,27 +1,10 @@
-# Webstarwars
+1. a github repository letöltése után az "npm install" felteszi a szükséges dependency-ket
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+2. ha localhoston akarod futtatni, az ng serve parancs lefutása után a http://localhost:4200 címen elérhető az app
 
-## Development server
+3. a bejelentkezés ablakon a név és jelszó feladat a leírásában van megadva. Mivel ez egy tesztfeladat, előre be van írva a mezőkbe
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+4. ezután a karakterek kiválasztása oldalra jutunk. A mobilos "swipe" funkciót végül nem implementáltam, ehhez több idő és kísérletezés kell mert első alkalom, hogy a swipe.js-t használnám. Inkább a feladat többi részére koncentráltam.
+A kiválasztásnál csak akkor jelenik meg a "Küzdelem szimulálása" gomb, ha két ellentétes oldalú karakter ki van választva
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+5. a szimuláció teljesen automatikus, 1 másodpercenként véletlenszerűen valamelyik fél veszít az életerejéből. Ha ez elfogy egyiküknél, automatikusan a másik nyer

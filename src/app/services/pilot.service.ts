@@ -54,12 +54,12 @@ export class PilotService {
   };
 
   //offline teszteléshez a loggedIn default 'true', éles környezethez 'false. A login() -t is ki kell kommentelni
-  loggedIn: boolean = false;
+  loggedIn: boolean = true;
 
   
-  selectionStage: boolean = true;
-  combatantLight: number = -1;
-  combatantDark: number = -1;
+  selectionStage: boolean = false;
+  combatantLight: number = 2;
+  combatantDark: number = 1;
   simulationId: string = '';
 
   //privát változók

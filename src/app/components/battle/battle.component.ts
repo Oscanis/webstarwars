@@ -69,10 +69,16 @@ export class BattleComponent implements OnInit {
   nextRound() {
     //random függvény, hogy melyik fél sérül
     if(Math.floor(Math.random() * 2) === 0) {
-      this.combatantDark.health -= 25;
+      this.combatantDark.health -= Math.floor(Math.random() * 20);
+      if (this.combatantDark.health < 0) {
+        this.combatantDark.health = 0;
+      }
     }
     else{
-      this.combatantLight.health -= 25;
+      this.combatantLight.health -= Math.floor(Math.random() * 20);
+      if (this.combatantLight.health < 0) {
+        this.combatantLight.health = 0;
+      }
     }
     //console.log(this.combatantDark.health + " vs " + this.combatantLight.health);
 
