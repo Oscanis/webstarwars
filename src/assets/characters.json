@@ -1,0 +1,88 @@
+{
+    "characters": [
+        {
+            "id": "vader",
+            "name": "Darth<br>Vader",
+            "side": "DARK",
+            "power": "Erő használata",
+            "description": "Vader az egyik legmarkánsabb, legikonikusabb és legkarizmatikusabb gonosztevő, hatalmas (bár még emberléptékű) termetével, sötét sisakjával, félelmetes akusztikájú, jellegzetes lélegzetvételével és hangképzésével."
+        },
+        {
+            "id": "maul",
+            "name": "Darth<br>Maul",
+            "side": "DARK",
+            "power": "Erő használata",
+            "description": "Maul egy dathomiri zabrak fajba tartozó, Erő-érzékeny férfi volt, aki a Galaktikus Köztársaság hanyatlásának, majd a Galaktikus Birodalom felemelkedésének idején a Sith nagyúr, Darth Sidious tanítványaként, majd ellene fordulva a mandalori Halálőrség, később pedig Fekete Nap és a Vörös Hajnal bűnszövetkezetek fejeként tevékenykedett."
+        },
+        {
+            "id": "grievous",
+            "name": "Grievous<br>tábornok",
+            "side": "DARK",
+            "power": "Kibernetikus test",
+            "description": "Grievous a látszat ellenére nem droid. Valójában a kaleesh fajba tartozik. A Kaleshek bolygójának, a Khalee-nek egyik szomszédbolygóján élő Hukok egyszer támadást indítottak Grievous családja ellen. Ebben a háborúban szerezte súlyos sérüléseit, melyek miatt kiborggá tették."
+        },
+        {
+            "id": "boba",
+            "name": "Boba<br>Fett",
+            "side": "DARK",
+            "power": "Páncélzat",
+            "description": "Boba Fett egy mandalori származású harcos és fejvadász volt. Nem természetes úton jött világra, ugyanis a hírhedt mandalori fejvadász, Jango Fett klónja és fogadott gyermeke volt, akinek kérésére a kaminoiak hozták létre a Yavini csata előtt 32-ben."
+        },
+        {
+            "id": "phasma",
+            "name": "Phasma<br>százados",
+            "side": "DARK",
+            "power": "Harcászati tapasztalat",
+            "description": "Az Első Rend (First Order) magas rangú női vezetője, Snoke legfőbb vezér, Kylo Ren és Hux tábornok után/mellett a legmagasabb rangú katona. Eltökélt, ambiciózus és rideg egyéniség, aki rajta tartja a szemét a katonáin, és maga is részt vesz a harctéren dúló csatákban."
+        },
+        {
+            "id": "stormtrooper",
+            "name": "Birodalmi<br>rohamosztagos",
+            "side": "DARK",
+            "power": "Fehér páncélzat",
+            "description": "A birodalmi rohamosztagosok, illetve rohamgárdisták elsőként megalakult csapatait a Galaktikus Köztársaság egykori hadseregéből, a klónkatonákból hozták létre. Ők genetikailag azonosak a génmintát szolgáltató Jango Fettel, a mandalori fejvadásszal."
+        },
+        {
+            "id": "luke",
+            "name": "Luke<br>Skywalker",
+            "side": "LIGHT",
+            "power": "Erő használata",
+            "description": "Luke a távoli Polis Massán született. Obi-Wan Kenobi és Yoda ideszállította a súlyosan megsebesült Padmé Amidalát, aki belehalt a szülésbe, de életet adott a két újszülöttnek: Luke-nak és Leiának. Mikor a két testvér a világra jött, Obi-Wan és Yoda elhatározta, hogy a két gyermeket egymástól elválasztva kell felnevelni, az Uralkodó és Darth Vader miatt."
+        },
+        {
+            "id": "kenobi",
+            "name": "Obi-Wan<br>Kenobi",
+            "side": "LIGHT",
+            "power": "Erő használata",
+            "description": "Az ifjú Obi-Wan Qui-Gon Jinn Jedi mester tanítványa volt a Galaktikus Köztársaság idejében. Amikor Obi-Wan legyőzte mestere gyilkosát, a Sith Darth Mault, megígérte a haldokló Qui-Gonnak, hogy Jedi lovagot farag az ifjú Anakin Skywalkerből, akár a Jedi Tanács döntése ellenére is."
+        },
+        {
+            "id": "anakin",
+            "name": "Anakin<br>Skywalker",
+            "side": "LIGHT",
+            "power": "Erő használata",
+            "description": "Anakin Skywalker a kicsiny, félreeső és kietlen sivatagbolygón, a Tatuinon nevelkedett, ahol anyjával, Shmi Skywalkerrel együtt egy Watto nevű toydari ócskás rabszolgája volt. 9 éves korában talált rá a bolygóra érkező Jedi mester, Qui-Gon Jinn, aki, annak alapján, hogy Anakinnak nem volt apja, és, hogy a fiú vérében páratlanul magas számban voltak jelen a Midikloriánok."
+        },
+        {
+            "id": "rey",
+            "name": "Rey<br>Palpatine",
+            "side": "LIGHT",
+            "power": "Erő használata",
+            "description": "Rey a második Halálcsillag elpusztítása után YU 9-ben született. Rey szülei Palpatine gyermekei, akik elmenekültek Palpatine-tól. Titokban Rey-t Jakkura vitték, hogy biztonságba legyen, azonban elrabolja Unkar Plutt. Ám szerencsére nem képezi rabszolgának, hanem roncsvadásszá képezi. "
+        },
+        {
+            "id": "yoda",
+            "name": "Yoda<br>mester",
+            "side": "LIGHT",
+            "power": "Erő használata",
+            "description": "Yoda, aki mindössze 66 cm magas volt, a Jedi Tanács egyik legtiszteltebb tagja. Yoda számtalan Jedi lovagot képzett ki az idők során. Ezek között a nevesebbek: Dooku gróf, Obi-Wan Kenobi (őt csak addig tanította, amíg Qui-Gon Jinn át nem vette tőle), Ki-Adi-Mundi és Luke Skywalker. Valójában azonban majdnem minden Jedinek a mestere, hiszen a Jedi Templomban ő tanította csoportosan a fiatalokat."
+        },
+        {
+            "id": "solo",
+            "name": "Han<br>Solo",
+            "side": "LIGHT",
+            "power": "Űrcsempész",
+            "description": "A Korélián született, 10 évvel a császár uralma előtt. Szüleit soha nem ismerte, csak sejtette, hogy ki lehetett az apja és az anyja. Később nem tervezve, de csatlakozik a Lázadók Szövetségéhez (melyben fokozatosan, a tábornoki rangig emelkedik), és nagyban hozzájárul az első Halálcsillag megsemmisítéséhez, majd végül az Uralkodó hatalmának megdöntéséhez."
+        }
+    ]
+}

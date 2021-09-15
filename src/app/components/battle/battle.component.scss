@@ -1,0 +1,225 @@
+@import '../../../styles-variables.scss';
+
+//css animációk oldalbetöltéshez
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(400%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-400%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(400%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+  
+
+.battle-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url('../../../assets/background/bg_3@2x.png') no-repeat center;
+    background-size: cover;
+    text-align: center;
+
+    .battle-header {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 70px;
+        padding-bottom: 1.5rem;
+        font-family: Starjedi;
+        font-size: 60px;
+        color: $c-white;
+    }
+
+    .battleground {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .vs {
+            width: 20%;
+            font-family: DG;
+            font-size: 150px;
+            color: $c-white;
+            align-self: center;
+            animation: 0.5s ease-in 0s 1 slideInFromBottom;
+        }
+
+        .combatant {
+            width: 35%;
+            text-align: center;
+        
+            .side {
+                font-family: Poppins-Black;
+                font-size: 24px;
+                color: $c-white;
+                text-align: center;
+            }
+
+            .char-name {
+                font-family: Starjedi;
+                font-size: 40px;
+                color: $c-white;
+                text-align: center;
+            }
+
+            .char-portrait {
+                width: 90%;
+                text-align: left;
+                position: relative;
+                bottom: 0%;
+                left: 5%;
+        
+                .char-background-dark {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 10%;
+                    width: 80%;
+                    padding-bottom: 80%;
+                    background-color: $c-darkgrey;
+                    border-radius: 50%;
+                }
+
+                .char-background-light {
+                    position: absolute;
+                    bottom: 10%;
+                    right: 10%;
+                    width: 80%;
+                    padding-bottom: 80%;
+                    background-color: $c-white;
+                    border-radius: 50%;
+                }
+        
+                .char-image {
+                    img {
+                        position: relative;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        z-index: 2;
+                    }
+                }
+            }
+
+            .healthbar {
+                .healthbar-background {
+                    width: 100%;
+                    height: 20px;
+                    background-color: $c-white;
+                    border-radius: 5px;
+                }
+
+                .healthbar-actual-dark {
+                    position: relative;
+                    left: 0%;
+                    width: 70%;
+                    height: 20px;
+                    background-color: $c-red;
+                    border-radius: 5px;
+                    transition: all 0.5s;
+                }
+
+                .healthbar-actual-light {
+                    position: relative;
+                    left: 30%;
+                    width: 70%;
+                    height: 20px;
+                    background-color: $c-yellow;
+                    border-radius: 5px;
+                    transition: all 0.5s;
+                }
+
+                .healthbar-percent {
+                    font-family: Poppins-Bold;
+                    font-size: 24px;
+                    color: $c-white;
+                    text-align: center;
+                }
+            }
+        }
+
+        #darkside {
+            animation: 1s ease-in 0s 1 slideInFromLeft;
+            transition: all 0.5s;
+        }
+
+        #lightside {
+            animation: 1s ease-in 0s 1 slideInFromRight;
+            transition: all 0.5s;
+        }
+
+        .winner-dark {
+
+            transform: translateX(95%);
+        }
+
+        .winner-light {
+            transform: translateX(-93%);
+        }
+
+        .hide {
+            height: 0px;
+            width: 0px;
+            opacity: 0;
+        }
+
+    }
+
+    .finish-button {
+        width: 300px;
+        font-family: Poppins-Bold;
+        font-size: 16px;
+        text-align: center;
+        color: $c-black;
+        margin: 0 auto;
+        padding: 6px;
+        background-color: $c-yellow;
+        border-radius: 5px;
+        cursor: pointer;
+        animation: 0.5s ease-in 0s 1 slideInFromBottom;
+    }
+}
+
+//mobilnézetben a kisebb felbontású háttér betöltése
+@media screen and (max-width: 992px) {
+    .battle-wrapper {    
+        width: 100%;
+        min-height: 100vh;
+        background: url('../../../assets/background/bg_3.jpg')  no-repeat center;
+        background-size: cover;
+    }
+    
+    .battle-header {
+        font-size: 32px!important;
+    }
+
+    .battleground {
+        justify-content: space-around!important;
+    }
+
+    .vs {
+        height: 0px;
+        width: 0px;
+        opacity: 0;
+    }
+
+    .char-name {
+        font-size: 30px!important;
+    }
+}

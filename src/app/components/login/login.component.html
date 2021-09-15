@@ -1,0 +1,14 @@
+<div class="login-wrapper">
+    <div class="title">
+        <h2>webstar</h2>
+        <h1>frontend</h1>
+    </div>
+    <form>
+        <label for="pilot">Felhasználónév</label>
+        <input type="text" [formControl]="pilotFormControl">
+        <label for="pass">Jelszó</label>
+        <input type="password" [formControl]="passFormControl">
+        <button id="submit-button" type="button" (click)="loginEvent()">Belépés</button>
+    </form>
+    <app-footer></app-footer>
+</div>

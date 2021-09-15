@@ -1,0 +1,10 @@
+<div class="header-wrapper">
+    <div *ngIf="pilotService.loggedIn" class="pilot">
+        <img src="../../../assets/ui/user.png" alt="">
+        <span>{{ pilotService.pilot.user.lastName }} {{ pilotService.pilot.user.firstName }}</span>
+    </div>
+    <div class="logout" (click)="onLogout()">
+        <span>Űrhajó elhagyása</span>
+        <img src="../../../assets/ui/logout.png" alt="">
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="battle-wrapper">
+    <div class="battle-header">{{ statusText }}</div>
+    <div class="battleground">
+        <div class="combatant" [ngClass]="{'winner-dark' : combatantDark.winner, 'hide': combatantLight.winner }" id="darkside">
+            <p class="side" [ngClass]="{'hide' : combatantDark.winner || combatantLight.winner }">Sötét oldal</p>
+            <div class="char-portrait">
+                <div class="char-background-dark"></div>
+                <div class="char-image">
+                    <img [src]="combatantDark.imgpath" alt="">
+                </div>
+            </div>
+            <p class="char-name">{{ combatantDark.name }}</p>
+            <div class="healthbar" [ngClass]="{'hide' : combatantDark.winner || combatantLight.winner }">
+                <div class="healthbar-background">
+                    <div class="healthbar-actual-dark" [ngStyle]="{'width': combatantDark.health + '%'}"></div>
+                </div>
+                <div class="healthbar-percent">{{ combatantDark.health / 100 | percent }}</div>
+            </div>
+        </div>
+
+        <div class="vs" [ngClass]="{'hide' : combatantDark.winner || combatantLight.winner }">
+            vs
+        </div>
+
+        <div class="combatant" [ngClass]="{'winner-light' : combatantLight.winner, 'hide': combatantDark.winner }" id="lightside">
+            <p class="side" [ngClass]="{'hide' : combatantDark.winner || combatantLight.winner }">Világos oldal</p>
+            <div class="char-portrait">
+                <div class="char-background-light"></div>
+                <div class="char-image">
+                    <img [src]="combatantLight.imgpath" alt="">
+                </div>
+            </div>
+            <p class="char-name">{{ combatantLight.name }}</p>
+            <div class="healthbar" [ngClass]="{'hide' : combatantDark.winner || combatantLight.winner }">
+                <div class="healthbar-background">
+                    <div class="healthbar-actual-light" [ngStyle]="{'width': combatantLight.health + '%', 'left': 100 - combatantLight.health + '%'}"></div>
+                </div>
+                <div class="healthbar-percent">{{ combatantLight.health / 100 | percent }}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="finish-button" (click)="finish()" *ngIf="combatantDark.winner || combatantLight.winner">Vissza a fedélzetre</div>
+</div>

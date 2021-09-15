@@ -1,0 +1,7 @@
+{
+    "*": {
+        "target": "https://developer.webstar.hu",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

@@ -1,0 +1,6 @@
+<div class="game-wrapper">
+    <div class="stage-wrapper" [ngSwitch]="pilotService.selectionStage">
+        <app-selection *ngSwitchCase="true"></app-selection>
+        <app-battle *ngSwitchCase="false"></app-battle>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="selection-wrapper">
+    <div class="navbar">
+        <p class="title">Válassz két harcost az ellenkező oldalakból!</p>
+        <div class="scrollbar">
+            <div class="dots" *ngFor="let item of this.pilotService.characterList.characters; index as i;">
+                <div class="dot-highlighted" *ngIf="i === inFocus.serial"></div>
+            </div>
+            <img class="arrow-left" src="../../../assets/ui/arrow_circle.png" alt="" (click)="onSwipeLeft()">
+            <img class="arrow-right" src="../../../assets/ui/arrow_circle.png" alt="" (click)="onSwipeRight()">
+        </div>
+    </div>
+
+    <div class="char">
+        <div class="char-info">
+            <div class="side">
+                <div *ngIf="inFocus.side === 'Világos'" class="side-icon-light"></div>
+                <div *ngIf="inFocus.side === 'Sötét'" class="side-icon-dark"></div>
+                <div class="side-text">
+                    <p class="info-title">OLDAL</p>
+                    <p class="info-body">{{ inFocus.side }}</p>
+                </div>
+            </div>
+            <div class="power">
+                <div class="power-icon"><img src="../../../assets/ui/star.png" alt=""></div>
+                <div class="power-text">
+                    <p class="info-title">KÜLÖNLEGES ERŐ</p>
+                    <p class="info-body">{{ inFocus.power }}</p>
+                </div>
+            </div>
+
+            <div class="charname" [innerHTML]="inFocus.name.toLowerCase()"></div>
+
+            <div class="select-button" (click)="onSelect()" [ngClass]="{'selected': inFocus.id === selectedLightId || inFocus.id === selectedDarkId}">Kiválasztom</div>
+            
+            <div class="description">
+                <p class="description-title"><span class="description-icon"></span>Leírás</p>
+                <p class="decription-body">{{ inFocus.description }}</p>
+            </div>
+        </div>
+
+        <div class="char-portrait">
+            <div class="char-background"></div>
+            <div class="char-image">
+                <img [src]="inFocus.imgpath" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="ready-button" (click)="ready()" [ngClass]="{'ready': readyToFight}">Küzdelem Szimulálása</div>
+</div>
